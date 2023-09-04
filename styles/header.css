@@ -105,13 +105,9 @@ html {
         padding: 0;
         margin-top: 35vh;
     }
-    .border.active{
+    .border.on{
         left: 0;
     }
-    .border.disable{
-        left: 0;
-    }
-   
     .nav-item {
         display: block;
         margin: 10px 0;
@@ -126,15 +122,15 @@ html {
     }
 
 }
-.hamburger.active .bar:nth-child(2) {
+.hamburger.on .bar:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1) {
+.hamburger.on .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger.active .bar:nth-child(3) {
+.hamburger.on .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
 
