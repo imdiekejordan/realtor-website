@@ -47,7 +47,7 @@
     .contact-bubble{
         margin-bottom: 50px;
     }
-    .contact-bubble.active{
+    .contact-bubble.on{
         display: none;
     }
 }
