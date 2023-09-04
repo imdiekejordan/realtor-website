@@ -1,0 +1,188 @@
+:root{
+    --color-dark: #3B5C53;
+    --color-secondary-dark:#123726;
+    --color-primary: #AA6627;
+    --color-text: #98531C;
+    --color-light: #F2E2C1;
+    --color-light-alternative: #EDECE8;
+}
+html {
+    scroll-behavior: smooth;
+}
+p { 
+    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+a { 
+    font-family: 'Lato', sans-serif;
+}
+body {
+    min-height: 0vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-light);
+}
+.words{
+    width: 90%;
+    color: var(--color-dark);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.words h1{
+    font-size: 60px;
+}
+.words h3{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: var(--color-dark);
+}
+@media only screen and (max-width: 850px) {
+    .words{
+        top: 45%;
+        left: 50%;
+    }
+    .words h1{
+        font-size: 50px;
+    }
+    .words h3{
+        font-size: 20px;
+    }
+}
+
+.main {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/* About Matsw */
+.introduction {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.row{ 
+    justify-content: center;
+    display: flex;
+}
+.content-col {
+    flex-basis: 44%;
+    margin-bottom: 0px;
+    text-align: left;
+    background: var(--color-dark);
+    padding: 25px;
+}
+.content-col h1{
+    color: var(--color-light);
+}
+.content-col p{
+    color: var(--color-light);
+    font-size: 18px;
+}
+.name-row{
+    display: flex;
+    justify-content: center;
+}
+.instagram{
+    height: 30px;
+    margin-bottom: -3px;
+}
+.image-column{
+    background: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.image-column .matthew-headshot{
+    height: 65vh;
+    width: auto;
+}
+
+
+@media(max-width: 760px){
+    .introduction{
+        justify-content: center;
+        display: flex;
+    }
+    .row{ 
+        display: block;
+        margin-bottom: 3rem;
+        background: #3B5C53;
+    }
+    .content-col p{
+        text-align: center;
+    }
+}
+
+@media(max-width: 900px){
+    .content-col p{
+        font-size: 16px;
+    }
+    
+}
+
+/* Slider */
+
+.container{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.board{
+    width: 100%;
+    background-color: var(--color-dark);
+    text-align: center;
+    padding: 3em 0;
+}
+.board h1{
+    font-size: 50px;
+    margin: 0;
+}
+.text-light{
+    color: var(--color-light)
+}
+.swiper{
+    width: 90%;
+    height: auto;
+}
+.swiper .swiper-slide .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.swiper .swiper-slide .flex p{
+    color: var(--color-light);
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.swiper .swiper-slide .comments{
+    padding: 5em 2em;
+    padding-bottom: 3em;
+    width: 78%;
+    border-right: 5px;
+    font-size: .9em;
+    position: relative;
+}
+
+.swiper .profile a{
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 400;
+}
+.swiper .swiper-button-prev, .swiper-button-next{
+    color: var(--color-text);
+}
