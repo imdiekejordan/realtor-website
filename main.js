@@ -22,10 +22,10 @@ const navlink = document.querySelectorAll(".nav-link");
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    border.classList.toggle("active");
-    contactimage.classList.toggle("active");
-    contactBubble.classList.toggle("active");
+    hamburger.classList.toggle("on");
+    border.classList.toggle("on");
+    contactimage.classList.toggle("on");
+    contactBubble.classList.toggle("on");
 }
 
 for (var i = 0; i < navlink.length; i++) {
