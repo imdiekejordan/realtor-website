@@ -63,7 +63,7 @@ body {
     margin-bottom: 5vh;
 }
 
-/* About Matsw */
+/* About Matthew */
 .introduction {
     width: 100%;
     margin: auto;
@@ -103,7 +103,7 @@ body {
 
 }
 .image-column .matthew-headshot{
-    height: 65vh;
+    height: 50vw;
     width: auto;
 }
 
@@ -120,6 +120,10 @@ body {
     }
     .content-col p{
         text-align: center;
+    }
+    .image-column .matthew-headshot{
+        height: 65vw;
+        width: auto;
     }
 }
 
@@ -185,4 +189,21 @@ body {
 }
 .swiper .swiper-button-prev, .swiper-button-next{
     color: var(--color-text);
+}
+@media(max-width: 450px){
+    .container{
+        margin-top: 10vh;
+    }    
+}
+@media(max-width: 375px){
+    .container{
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+    }    
+}
+@media(max-width: 300px){
+    .container{
+        margin-top: 25vh;
+        margin-bottom: 25vh;
+    }    
 }
